@@ -111,3 +111,15 @@ Créez quatre instance de la classe **«Livre»** pour représenter des livres d
 Écrivez une fonction **«emprunter_livre»** qui prend le titre du livre en paramètre et met à jour la valeur associée à la clé **«disponible»** pour le livre emprunté. Écrire un message de succès si le livre et dispo. Et un message d’excuse si le livre n’est pas disponible.
 
 Écrivez une fonction **«retourner_livre»** qui prend le titre du livre en paramètre et met à jour la valeur associée à la clé **«disponible»** pour le livre retourné.
+
+### Exercice 7: Bistro-matic
+Le but de cet exercice est d'écrire un programme qui affichera le résultat d'une expression mathématique évaluée. L'expression sera composée d'entiers infinis pouvant être exprimés dans n'importe quelle base.  
+Le programme doit gérer les opérateurs suivants : +-*/%, parenthèses, priorités d'opération et erreurs de syntaxe, **mais pas les nombres flottants.**  
+Exemple:  
+```
+echo ‘3+6’ | ./calc 0123456789 ‘()+-*/%’ 3 ; echo 9
+
+echo ‘----++-6*12’ | ./calc 0123456789 ‘()+-*/%’ 11 | cat -e ; echo -72
+
+echo ‘-(12*(13+15/5*(6/(12+14%(30%5+(10*25)-46)+16)-20)/43)*20)*(-(12-98*42)*(16+63-50/3))’ | ./calc 0123456789 ‘()+-*/%’ 84 | cat -e ; echo -744629760
+```
